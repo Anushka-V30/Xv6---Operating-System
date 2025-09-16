@@ -1,9 +1,25 @@
-<h1 align="center">:beginner: Understanding the Xv6 Architecture </h1>
+# xv6 Operating System 
 
-* This section is an attempt to understanding and making useful changes in the structure of the **Xv6** Operating System.
-* This section is in accordance with the the theoretical course, **CS-343** (**OPERATING SYSTEMS**), taught at **Indian Institute of Technology, Guwahati**.
-* We have tried to focus on implementing the following :
-    * **Threads** and their **Synchronization**
-    * **Scheduling Policies**
-    * **Memory Management**
-* For further insights on each topic, refer to the **Readme** section and the **code** provided in each folder.  
+This project extends the [xv6](https://pdos.csail.mit.edu/6.828/2020/xv6.html) teaching operating system with **advanced features in memory management and process scheduling**.  
+The goal was to explore kernel internals, optimize resource usage, and improve overall system performance.
+
+---
+
+## Features Implemented
+
+- **Lazy Memory Allocation**  
+  - Pages allocated only when accessed (on-demand).  
+  - Prevents unnecessary memory usage.  
+
+- **LRU-based Page Swapping**  
+  - Implemented Least Recently Used (LRU) replacement policy.  
+  - Allows efficient swapping of pages between memory and disk.  
+
+### 🔹 Scheduling Enhancements
+- **Hybrid SJF / Round-Robin Scheduler**  
+  - Shortest Job First for efficiency.  
+  - Falls back to Round-Robin for fairness among equal-priority tasks.  
+
+
+## 🛠️ Project Structure
+
