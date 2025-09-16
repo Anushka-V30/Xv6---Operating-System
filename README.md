@@ -15,11 +15,9 @@ The goal was to explore kernel internals, optimize resource usage, and improve o
   - Implemented Least Recently Used (LRU) replacement policy.  
   - Allows efficient swapping of pages between memory and disk.  
 
-### 🔹 Scheduling Enhancements
+###  Scheduling Enhancements
 - **Hybrid SJF / Round-Robin Scheduler**  
   - Shortest Job First for efficiency.  
   - Falls back to Round-Robin for fairness among equal-priority tasks.  
 
-
-## 🛠️ Project Structure
 
